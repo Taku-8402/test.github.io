@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+header{
+    width: 100%;
+    height: 170px;
+    background: linear-gradient(navy, #0099CC);
+}
+
+h1 {
+    color: black;
+    -webkit-text-stroke: 1px yellow;
+    padding: 0 20px;
+}
+
+h1.title:hover{
+    color: gray;
+}
+
+/* 検索ボタン*/
+.btn a {
+    right:35px;
+    top:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn a:hover {
+    color: #F2F2F2;
+}
+
+.btn01 a {
+    background-color: #00E5FF;
+    border: 1px solid #000000;
+    border-radius: 35px;
+}
+
+.btn01 a:hover {
+    background-color: #2800B9;
+    border: 1px solid #333;
+}
+
+.btn01 a::before {
+    position: absolute;
+    transform: rotate(30deg);
+    width: 12px;
+    height: 1px;
+    background-color: #333;
+}
+
+.btn01 a::after {
+    position: absolute;
+    top: 50%;
+    width: 70px;
+    height: 1px;
+    background-color: #333;
+}
+
+
+/*ここまで*/
+
+.Button{
+    display: flex;
+    margin: 0px 300px;
+    position: relative;
+    top: 25px;
+}
+
+button{
+    width: 130px;
+    height: 35px;
+    border-radius: 20px;
+    margin: 0px 20px;
+}
+
+button.btncolor:hover{
+    background-color: gray;
+
+}
+
+.btncolor.active{
+    background-color: gray
+}
+
+.fade {
+    color: white;
+    -webkit-text-stroke: 1px black;
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    animation-name: fadein;
+    animation-duration: 4s;
+}
+
+.fade p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes fadein {
+from {
+    opacity: 0;
+    transform: translateY(20px);
+}
+to {
+    opacity: 1;
+    transform: translateY(20);
+}
+}
+
+footer{
+    height: 150px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    line-height: 70px;
+}
